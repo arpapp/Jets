@@ -13,5 +13,7 @@ public class CargoPlane extends Jet{
 	public void loadCargo() {
 		//some bs about loading shit
 	}
+	
+	
 
 }

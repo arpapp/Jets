@@ -14,9 +14,19 @@ public class Airfield {
 		// default constructor
 	}
 	
+	public void addJet() {
+//method for adding jet    like airfield.addNewJet in another class, ONLY THE AIRFIELD MAINTAINS AN ARRAY OF JETS
+		
+	}
+	
+	public void listFleet() {
+		for (int i = 0 ; i < jetArr.size() ; i++) {
+			System.out.println(jetArr.get(i));
+		}
+	}
 
 
-	public void getJetInfo() {
+	public List<Jet> getJetInfo() {
 		BufferedReader bufIn = null;
 		try {
 			bufIn = new BufferedReader(new FileReader("jets.txt"));
@@ -49,10 +59,7 @@ public class Airfield {
 				}
 			}
 		}
+		return jetArr;
 	}
 	
-	public void addJet() {
-//method for adding jet    like airfield.addNewJet in another class, ONLY THE AIRFIELD MAINTAINS AN ARRAY OF JETS
-		
-	}
 }
