@@ -1,0 +1,5 @@
+ Toothless the pack dragon, 150, 800, 50000
+ Smaug the pack dragon, 100, 1100, 70000
+ Saphira the violent dragon, 200, 900, 120000
+ Thorn the violent dragon, 150, 500, 70000
+ Glaedr the violent dragon, 180, 1100, 110000
