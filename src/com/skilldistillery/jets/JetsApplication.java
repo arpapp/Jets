@@ -12,7 +12,9 @@ public class JetsApplication {
 
 		app.getArray();
 		
-		airfield.listFleet();
+		airfield.flyFleet();
+
+		
 		
 		System.out.println("Welcome to Jets Declassified, your eye in they sky.");
 
@@ -44,5 +46,11 @@ public class JetsApplication {
 		
 		airfield.listFleet();
 
+	}
+	
+	public void flyFleet() {
+		
+		airfield.flyFleet();
+		
 	}
 }

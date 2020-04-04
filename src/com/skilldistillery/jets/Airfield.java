@@ -24,6 +24,13 @@ public class Airfield {
 			System.out.println(jetArr.get(i));
 		}
 	}
+	
+	public void flyFleet() {
+		for (int i = 0 ; i < jetArr.size() ; i++) {
+			Jet currentJet = jetArr.get(i);
+			currentJet.fly();
+		}
+	}
 
 
 	public List<Jet> getJetInfo() {
