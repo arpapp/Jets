@@ -1,12 +1,12 @@
 package com.skilldistillery.jets;
 
-public class CargoDragon extends Jet {
+public class CargoPlane extends Jet{
 	
-	public CargoDragon() {
+	public CargoPlane() {
 		//default constructor
 	}
 	
-	public CargoDragon (String _model, double _speed, int _range, double _price) {
+	public CargoPlane (String _model, double _speed, int _range, double _price) {
 		super( _model,  _speed,  _range,  _price);
 	}
 	
