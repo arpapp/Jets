@@ -50,6 +50,9 @@ public class JetsApplication {
 			}
 
 		} while (selection != 9);
+		
+		System.out.println("Thank you for flying with us!");
+		System.exit(0);
 
 	}
 
