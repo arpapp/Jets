@@ -19,26 +19,11 @@ public Jet(String model, double speed, int range, double price) {
 		this.range = range;
 		this.price = price;
 	}
-
-
-
-//	public Jet(String _model, double _speed, int _range, double _price) {
-//		model = _model;
-//		speed = _speed;
-//		range = _range;
-//		price = _price;
-//	}
 	
 	public void fly() {
-		System.out.println("We have a " + this.model + " flying at " +this.speed+ " MPH.");
-		System.out.println("It has a range of " + this.range + " miles so it can fly for " + (this.range/this.speed) + " hours.");
-		System.out.println("Mach speed is " + (this.speed/767));
-	}
-	
-	public double getSpeedInMach() {
-		double speedInMach = 0;
-		//some bs about speed in mach
-		return speedInMach;
+		System.out.println("We have a " + this.model + " flying at " +this.speed+ " MPH. The range is " + this.range + " miles.");
+		System.out.printf("So it can fly for %.2f hours.%n ", (this.range/this.speed));
+		System.out.printf("Mach speed is %.2f.%n", (this.speed/767));
 	}
 
 	public String getModel() {
