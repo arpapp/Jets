@@ -82,7 +82,7 @@ public class Airfield {
 	}
 	
 	public void removeJet (int selection) {
-		jetArr.remove(selection);
+		jetArr.remove(selection-1);
 	}
 
 	public List<Jet> getJetInfo() {
