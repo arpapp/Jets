@@ -12,9 +12,9 @@ public class JetsApplication {
 
 		app.getArray();
 		
-		app.userAddJet();
+		app.removeJet();
 		app.listFleet();
-	
+			
 		System.out.println("Welcome to Jets Declassified, your eye in they sky.");
 
 		do {
@@ -87,5 +87,16 @@ public class JetsApplication {
 		Jet newJet = new JetImpl(model, speed, range, price);
 		
 		airfield.addJet(newJet);
+	}
+	
+	public void removeJet() {
+		System.out.println("Here is the current fleet: ");
+		airfield.listFleet();
+		System.out.print("Which jet would you like to remove? (Please enter the number): ");
+		int selection = kb.nextInt();
+		
+		System.out.println("Thank you! Your jet has been removed.");
+		
+		airfield.removeJet(selection);
 	}
 }

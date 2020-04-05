@@ -16,8 +16,10 @@ public class Airfield {
 	}
 
 	public void listFleet() {
+		int counter = 1;
 		for (int i = 0; i < jetArr.size(); i++) {
-			System.out.println(jetArr.get(i));
+			System.out.println(counter + ": " + jetArr.get(i));
+			counter++;
 		}
 	}
 
@@ -77,6 +79,10 @@ public class Airfield {
 		
 		jetArr.add(newJet);
 		
+	}
+	
+	public void removeJet (int selection) {
+		jetArr.remove(selection);
 	}
 
 	public List<Jet> getJetInfo() {
