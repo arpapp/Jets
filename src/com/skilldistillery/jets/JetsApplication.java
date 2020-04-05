@@ -15,6 +15,7 @@ public class JetsApplication {
 		System.out.println("Welcome to Jets Declassified, your eye in they sky.");
 
 		do {
+			System.out.println();
 			System.out.println("Please select from the following options:");
 			System.out.println("1. List fleet");
 			System.out.println("2. Fly all jets");
@@ -87,6 +88,7 @@ public class JetsApplication {
 	}
 
 	public void userAddJet() {
+		System.out.println();
 		System.out.print("Please enter if the jet is a \"cargo plane\" or \"fighter jet\": ");
 		String model = kb.nextLine() + kb.nextLine();
 
@@ -111,6 +113,7 @@ public class JetsApplication {
 	}
 
 	public void removeJet() {
+		System.out.println();
 		System.out.println("Here is the current fleet: ");
 		airfield.listFleet();
 		System.out.print("Which jet would you like to remove? (Please enter the number): ");
