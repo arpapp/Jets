@@ -70,8 +70,8 @@ public class Airfield {
 	public void fleetFight() {
 		for (int i = 0; i < jetArr.size(); i++) {
 			Jet current = jetArr.get(i);
-			if (current instanceof CargoPlane) {
-				((CargoPlane) current).loadCargo();
+			if (current instanceof FighterPlane) {
+				((FighterPlane) current).fight();
 			}
 		}
 

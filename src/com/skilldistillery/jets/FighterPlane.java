@@ -1,6 +1,6 @@
 package com.skilldistillery.jets;
 
-public class FighterPlane extends Jet {
+public class FighterPlane extends Jet implements CombatReady {
 	public FighterPlane() {
 		//default constructor
 	}
@@ -10,7 +10,7 @@ public class FighterPlane extends Jet {
 	}
 	
 	public void fight() {
-		//some bs about fighting
+		System.out.println( this.getModel() + " is shooting! Oh, the humanity!");
 	}
 
 }

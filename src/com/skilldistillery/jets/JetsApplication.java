@@ -61,4 +61,8 @@ public class JetsApplication {
 	public void loadfleet() {
 		airfield.loadCargo();
 	}
+	
+	public void dogfight() {
+		airfield.fleetFight();
+	}
 }
