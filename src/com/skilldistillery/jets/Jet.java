@@ -19,7 +19,7 @@ public abstract class Jet {
 	
 	public void fly() {
 		System.out.println("We have a " + this.model + " flying at " +this.speed+ " MPH.");
-		System.out.println("It has a range of " + this.range + " so it can fly for " + (this.range/this.speed) + " hours.");
+		System.out.println("It has a range of " + this.range + " miles so it can fly for " + (this.range/this.speed) + " hours.");
 	}
 	
 	public double getSpeedInMach() {

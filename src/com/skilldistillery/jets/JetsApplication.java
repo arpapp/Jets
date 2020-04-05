@@ -12,9 +12,8 @@ public class JetsApplication {
 
 		app.getArray();
 		
-		airfield.flyFleet();
+		airfield.fastestJet();
 
-		
 		
 		System.out.println("Welcome to Jets Declassified, your eye in they sky.");
 
@@ -52,5 +51,9 @@ public class JetsApplication {
 		
 		airfield.flyFleet();
 		
+	}
+	
+	public void fastestJet() {
+		airfield.fastestJet();
 	}
 }

@@ -31,6 +31,19 @@ public class Airfield {
 			currentJet.fly();
 		}
 	}
+	
+	public void fastestJet() {
+		Jet fastest = jetArr.get(0);
+		for (int i = 0 ; i < jetArr.size() ; i++) {
+			Jet current = jetArr.get(i);
+			if(fastest.getSpeed() < current.getSpeed()) {
+				fastest = current;
+			}
+		}
+		
+		System.out.println("The fastest jet is " + fastest.toString());
+		
+	}
 
 
 	public List<Jet> getJetInfo() {
