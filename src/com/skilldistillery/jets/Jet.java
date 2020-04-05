@@ -32,6 +32,7 @@ public Jet(String model, double speed, int range, double price) {
 	public void fly() {
 		System.out.println("We have a " + this.model + " flying at " +this.speed+ " MPH.");
 		System.out.println("It has a range of " + this.range + " miles so it can fly for " + (this.range/this.speed) + " hours.");
+		System.out.println("Mach speed is " + (this.speed/767));
 	}
 	
 	public double getSpeedInMach() {
