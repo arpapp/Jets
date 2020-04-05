@@ -1,6 +1,6 @@
 package com.skilldistillery.jets;
 
-public class CargoPlane extends Jet{
+public class CargoPlane extends Jet implements CargoCarrier{
 	
 	public CargoPlane() {
 		//default constructor
@@ -11,7 +11,8 @@ public class CargoPlane extends Jet{
 	}
 	
 	public void loadCargo() {
-		//some bs about loading shit
+		int random = (int)(100+Math.random()*500);
+		System.out.println("Loading " + random +  " lbs of cargo onto " + this.getModel() + ".");
 	}
 	
 	

@@ -57,4 +57,8 @@ public class JetsApplication {
 	public void longestRange() {
 		airfield.longestRange();
 	}
+	
+	public void loadfleet() {
+		airfield.loadCargo();
+	}
 }
