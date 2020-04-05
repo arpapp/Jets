@@ -44,6 +44,19 @@ public class Airfield {
 		System.out.println("The fastest jet is " + fastest.toString());
 		
 	}
+	
+	public void longestRange() {
+		Jet longestRange = jetArr.get(0);
+		for (int i = 0 ; i < jetArr.size() ; i++) {
+			Jet current = jetArr.get(i);
+			if(longestRange.getRange() < current.getRange()) {
+				longestRange = current;
+			}
+		}
+		
+		System.out.println("The jet with the longest range is " + longestRange.toString());
+		
+	}
 
 
 	public List<Jet> getJetInfo() {

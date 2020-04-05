@@ -11,10 +11,7 @@ public class JetsApplication {
 		int selection;
 
 		app.getArray();
-		
-		airfield.fastestJet();
-
-		
+	
 		System.out.println("Welcome to Jets Declassified, your eye in they sky.");
 
 		do {
@@ -55,5 +52,9 @@ public class JetsApplication {
 	
 	public void fastestJet() {
 		airfield.fastestJet();
+	}
+	
+	public void longestRange() {
+		airfield.longestRange();
 	}
 }
