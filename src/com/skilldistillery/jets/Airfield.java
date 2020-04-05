@@ -9,14 +9,10 @@ import java.util.List;
 public class Airfield {
 
 	private List<Jet> jetArr = new ArrayList<>();
+	static JetsApplication app = new JetsApplication();
 
 	public Airfield() {
 		// default constructor
-	}
-
-	public void addJet() {
-//method for adding jet    like airfield.addNewJet in another class, ONLY THE AIRFIELD MAINTAINS AN ARRAY OF JETS
-
 	}
 
 	public void listFleet() {
@@ -75,6 +71,12 @@ public class Airfield {
 			}
 		}
 
+	}
+	
+	public void addJet(Jet newJet) {
+		
+		jetArr.add(newJet);
+		
 	}
 
 	public List<Jet> getJetInfo() {

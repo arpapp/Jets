@@ -5,12 +5,15 @@ import java.util.Scanner;
 public class JetsApplication {
 	static Airfield airfield = new Airfield();
 	static JetsApplication app = new JetsApplication();
+	static Scanner kb = new Scanner(System.in);
 
 	public static void main(String[] args) {
-		Scanner kb = new Scanner(System.in);
 		int selection;
 
 		app.getArray();
+		
+		app.userAddJet();
+		app.listFleet();
 	
 		System.out.println("Welcome to Jets Declassified, your eye in they sky.");
 
@@ -64,5 +67,25 @@ public class JetsApplication {
 	
 	public void dogfight() {
 		airfield.fleetFight();
+	}
+	
+	public void userAddJet() {
+		System.out.print("Please enter if the jet is a \"cargo plane\" or \"fighter jet\": ");
+		String model = kb.nextLine();
+		
+		System.out.print("Please enter the speed of the jet:  ");
+		double speed = kb.nextDouble();
+		
+		System.out.print("Please enter the range of the jet: ");
+		int range = kb.nextInt();
+		
+		System.out.print("Please enter the price of the jet: ");
+		double price = kb.nextDouble();
+		
+		System.out.println("Thank you! Your jet has been added.");
+		
+		Jet newJet = new JetImpl(model, speed, range, price);
+		
+		airfield.addJet(newJet);
 	}
 }
