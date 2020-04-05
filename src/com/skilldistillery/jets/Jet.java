@@ -10,12 +10,24 @@ public abstract class Jet {
 		//default constructor
 	}
 	
-	public Jet(String _model, double _speed, int _range, double _price) {
-		model = _model;
-		speed = _speed;
-		range = _range;
-		price = _price;
+	
+	
+public Jet(String model, double speed, int range, double price) {
+		super();
+		this.model = model;
+		this.speed = speed;
+		this.range = range;
+		this.price = price;
 	}
+
+
+
+//	public Jet(String _model, double _speed, int _range, double _price) {
+//		model = _model;
+//		speed = _speed;
+//		range = _range;
+//		price = _price;
+//	}
 	
 	public void fly() {
 		System.out.println("We have a " + this.model + " flying at " +this.speed+ " MPH.");

@@ -88,20 +88,20 @@ public class JetsApplication {
 
 	public void userAddJet() {
 		System.out.print("Please enter if the jet is a \"cargo plane\" or \"fighter jet\": ");
-		String model = kb.nextLine();
-		kb.nextLine();
+		String model = kb.nextLine() + kb.nextLine();
 
 		System.out.print("Please enter the speed of the jet:  ");
 		double speed = kb.nextDouble();
 		kb.nextLine();
+		
 
 		System.out.print("Please enter the range of the jet: ");
 		int range = kb.nextInt();
-		kb.nextLine();
+		
 
 		System.out.print("Please enter the price of the jet: ");
 		double price = kb.nextDouble();
-		kb.nextLine();
+		
 
 		System.out.println("Thank you! Your jet has been added.");
 
