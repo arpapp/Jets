@@ -1,6 +1,6 @@
-### Jets
+# Jets
 
-##Overview
+## Overview
 
 The program begins by reading information from a .txt file and creating Jet objects from that information. The jet objects are then assigned to an array list. The program then presents a menu to the user. All menu options will call methods from the Airfield object where all Jet object information is stored and handled. The actual qualities of Jet objects, (model, speed, range, and price), are all private fields listed in the Jet class. Both these practices allow for better encapsulation and protection of data.
 
